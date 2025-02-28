@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        bgcolor: '#F4F7FF',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal
+        }
+    </style>
+</head>
+
+<body class="bg-bgcolor poppins">
+    <header class="w-[85.94vw] mx-auto mt-6 bg-white p-3 rounded-xl">
+        <nav class="nav-section  flex justify-between items-center">
+            <div class="logo flex gap-4 items-center ">
+                <div><img class="w-10" src="assets/logo.png" alt=""></div>
+                <div class="text-2xl">
+                    <span class="font-extralight">Dev</span><span class="font-bold">Board</span>
+                </div>
+            </div>
+            <div class="color flex gap-4 items-center">
+                <div class="flex gap-2 items-center bg-bgcolor px-4 py-2 rounded-3xl">
+                    <div><img class="w-6" src="assets/checkbox.png" alt=""></div>
+                    <div class="font-bold text-lg ">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="p-2 bg-bgcolor rounded-full"><img class="w-7" src="assets/theme-btn.png" alt=""></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="w-[85.94vw] mx-auto my-6 rounded-xl flex gap-5">
+
+        <!-- ...........  Left Side  ............... -->
+
+        <div class="left-Side bg-white p-5 rounded-xl">
+            <div class="upperbar flex gap-5 ">
+                <div class="task-assigned p-3 bg-bgcolor flex gap-2 rounded-xl items-center">
+                    <div class="rounded-full p-3"><img src="assets/checkbox.png" alt=""></div>
+                    <div class="flex flex-col gap-1">
+                        <p class="text-sm">Task Assigned</p>
+                        <p class="text-xl font-bold">05</p>
+                    </div>
+                </div>
+
+                <div
+                    class="task-discover flex gap-3 rounded-xl bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] items-center py-5 px-9 pr-32">
+                    <div><img class="w-14" src="assets/board.png" alt=""></div>
+                    <div class="text-white">
+                        <p>Discover Something <br> New Today!</p>
+                    </div>
+                </div>
+                <div class="task-date flex gap-4 justify-center items-center bg-bgcolor p-3 px-5 rounded-xl">
+                    <div><img src="assets/calender.png" alt=""></div>
+                    <div>
+                        <div>Wed</div>
+                        <div class="font-bold"><data value="">Jul 28,2025</data></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gridbar grid grid-cols-3 gap-5 mt-14">
+
+         <!-- .........  Card - 1  ........... -->
+
+                <div class="card p-4 flex flex-col gap-2 bg-bgcolor rounded-xl">
+                    <div class="p-2 rounded-lg bg-white w-20 text-xs flex justify-center">
+                        <p>ShopEase</p>
+                    </div>
+                    <p class="text-lg font-semibold my-1">Fix Mobile Button Issue </p>
+                    <div class="bg-white p-3 rounded-lg text-xs">
+                        <p>Debug using Chrome DevTools, check for overlappin</p>
+                    </div>
+                    <div class="mt-2 flex items-center justify-between justify-center">
+                        <div class="mt-2">
+                            <p class="text-gray-500 text-xs">Deadline</p>
+                            <p class="font-semibold font-semibold text-sm">21 March 2025</p>
+                        </div>
+                        <div >
+                            <button class="p-2 bg-[#3752FD] rounded-lg text-xs font-semibold text-white px-3">Completed</button></div>
+                    </div>
+                </div>
+
+                <!-- .........  Card - 2  ........... -->
+
+                <div class="card p-4 flex flex-col gap-2 bg-bgcolor rounded-xl">
+                    <div class="p-2 rounded-lg bg-white w-20 text-xs flex justify-center">
+                        <p>CloudSync</p>
+                    </div>
+                    <p class="text-lg font-semibold my-1">Add Dark Mode</p>
+                    <div class="bg-white p-3 rounded-lg text-xs">
+                        <p>Debug using Chrome DevTools, check for overlappin</p>
+                    </div>
+                    <div class="mt-2 flex items-center justify-between justify-center">
+                        <div class="mt-2">
+                            <p class="text-gray-500 text-xs">Deadline</p>
+                            <p class="font-semibold font-semibold text-sm">21 March 2025</p>
+                        </div>
+                        <div >
+                            <button class="p-2 bg-[#3752FD] rounded-lg text-xs font-semibold text-white px-3">Completed</button></div>
+                    </div>
+                </div>
+
+                <!-- .........  Card - 3  ........... -->
+
+                <div class="card p-4 flex flex-col gap-2 bg-bgcolor rounded-xl">
+                    <div class="p-2 rounded-lg bg-white w-20 text-xs flex justify-center">
+                        <p>SwiftPay</p>
+                    </div>
+                    <p class="text-lg font-semibold my-1">Optimize  Home page </p>
+                    <div class="bg-white p-3 rounded-lg text-xs">
+                        <p>Debug using Chrome DevTools, check for overlappin</p>
+                    </div>
+                    <div class="mt-2 flex items-center justify-between justify-center">
+                        <div class="mt-2">
+                            <p class="text-gray-500 text-xs">Deadline</p>
+                            <p class="font-semibold font-semibold text-sm">21 March 2025</p>
+                        </div>
+                        <div >
+                            <button class="p-2 bg-[#3752FD] rounded-lg text-xs font-semibold text-white px-3">Completed</button></div>
+                    </div>
+                </div>
+
+                <!-- .........  Card - 4  ........... -->
+
+                <div class="card p-4 flex flex-col gap-2 bg-bgcolor rounded-xl">
+                    <div class="p-2 rounded-lg bg-white w-14 text-xs flex justify-center">
+                        <p>Meta</p>
+                    </div>
+                    <p class="text-lg font-semibold my-1">Add new emoji 🤲</p>
+                    <div class="bg-white p-3 rounded-lg text-xs">
+                        <p>Debug using Chrome DevTools, check for overlappin</p>
+                    </div>
+                    <div class="mt-2 flex items-center justify-between justify-center">
+                        <div class="mt-2">
+                            <p class="text-gray-500 text-xs">Deadline</p>
+                            <p class="font-semibold font-semibold text-sm">21 March 2025</p>
+                        </div>
+                        <div >
+                            <button class="p-2 bg-[#3752FD] rounded-lg text-xs font-semibold text-white px-3">Completed</button></div>
+                    </div>
+                </div>
+
+                <!-- .........  Card - 5  ........... -->
+
+                <div class="card p-4 flex flex-col gap-2 bg-bgcolor rounded-xl">
+                    <div class="p-2 rounded-lg bg-white w-28 text-xs flex justify-center">
+                        <p>Google LLC</p>
+                    </div>
+                    <p class="text-lg font-semibold my-1">Integrate OpenAI API </p>
+                    <div class="bg-white p-3 rounded-lg text-xs">
+                        <p>Debug using Chrome DevTools, check for overlappin</p>
+                    </div>
+                    <div class="mt-2 flex items-center justify-between justify-center">
+                        <div class="mt-2">
+                            <p class="text-gray-500 text-xs">Deadline</p>
+                            <p class="font-semibold font-semibold text-sm">21 March 2025</p>
+                        </div>
+                        <div >
+                            <button class="p-2 bg-[#3752FD] rounded-lg text-xs font-semibold text-white px-3">Completed</button></div>
+                    </div>
+                </div>
+
+                <!-- .........  Card - 6  ........... -->
+
+                <div class="card p-4 flex flex-col gap-2 bg-bgcolor rounded-xl">
+                    <div class="p-2 rounded-lg bg-white w-20 text-xs flex justify-center">
+                        <p>Glassdoar</p>
+                    </div>
+                    <p class="text-lg font-semibold my-1">Improve Job searching </p>
+                    <div class="bg-white p-3 rounded-lg text-xs">
+                        <p>Debug using Chrome DevTools, check for overlappin</p>
+                    </div>
+                    <div class="mt-2 flex items-center justify-between justify-center">
+                        <div class="mt-2">
+                            <p class="text-gray-500 text-xs">Deadline</p>
+                            <p class="font-semibold font-semibold text-sm">21 March 2025</p>
+                        </div>
+                        <div >
+                            <button class="p-2 bg-[#3752FD] rounded-lg text-xs font-semibold text-white px-3">Completed</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-Side bg-white flex flex-col gap-4 items-center p-5 rounded-xl w-[310px]">
+            <div class="flex gap-3 items-center">
+                <div><img src="assets/activity.png" alt=""></div>
+                <div class="font-semibold">
+                    <p>Activity Log</p>
+                </div>
+            </div>
+            <div><button class="p-3 bg-[#3752FD] rounded-lg text-xs font-semibold text-white px-4">Clear
+                    History</button></div>
+            <div></div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
