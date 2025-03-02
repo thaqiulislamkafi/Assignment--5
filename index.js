@@ -3,8 +3,13 @@
 
 let today = new Date();
 console.log(today);
+let month = today.getMonth() ;
+let monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"] ;
 
-let date = `${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()}`;
+// let date = `${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()}`;
+let date = `${monthNames[month]} ${today.getDate()}, ${today.getFullYear()}`;
+
+
 document.getElementById("date").innerText = date;
 
 
@@ -26,7 +31,7 @@ let day = String(today.getDay());
 let days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"] 
 
 
-document.getElementById("bar").innerText = days[day];
+document.getElementById("bar").innerText = days[day] +" ,";
 function currentTime() {
 
         let now = new Date();
