@@ -32,7 +32,7 @@
         }
         .tasklist {
             font-size: small;
-            color: rgb(179, 177, 177);
+            color: rgb(109, 109, 109);
             padding: 10px;
             border-radius: 14px;
             background-color: #F4F7FF;
@@ -41,7 +41,7 @@
     </style>
 </head>
 
-<body class="bg-bgcolor poppins">
+<body id="bd" class="bg-bgcolor poppins">
     <header class="w-[89.94vw] mx-auto mt-6 bg-white p-3 rounded-xl">
         <nav class="nav-section  flex justify-between items-center">
             <div class="logo flex gap-4 items-center ">
@@ -57,7 +57,7 @@
                         <p>23</p>
                     </div>
                 </div>
-                <div class="p-2 bg-bgcolor rounded-full"><img class="w-7" src="assets/theme-btn.png" alt=""></div>
+                <div id="color-btn" class="p-2 bg-bgcolor rounded-full cursor-pointer"><img class="w-7" src="assets/theme-btn.png" alt=""></div>
             </div>
         </nav>
     </header>
@@ -68,7 +68,7 @@
 
         <div class="left-Side bg-white p-5 rounded-xl">
             <div class="upperbar flex flex-col lg:flex-row gap-3 lg:gap-5 ">
-                <div class="task-assigned p-3 bg-bgcolor flex gap-2 rounded-xl items-center">
+                <div class="task-assigned p-3 bg-bgcolor flex gap-2 rounded-xl items-center lg:w-[200px]">
                     <div class="rounded-full p-3"><img src="assets/checkbox.png" alt=""></div>
                     <div class="flex flex-col gap-1">
                         <p class="text-sm">Task Assigned</p>
@@ -76,18 +76,18 @@
                     </div>
                 </div>
 
-                <div
-                    class="task-discover flex gap-3 rounded-xl bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] items-center py-5 px-9 lg:pr-32">
+                <div id="task-discover"
+                    class=" flex gap-3 rounded-xl bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] items-center py-5 px-9 lg:w-[430px] cursor-pointer">
                     <div><img class="w-14" src="assets/board.png" alt=""></div>
                     <div class="text-white">
                         <p>Discover Something <br> New Today!</p>
                     </div>
                 </div>
-                <div class="task-date flex gap-4 justify-center items-center bg-bgcolor p-3 px-5 rounded-xl ">
+                <div class="task-date flex gap-4 justify-center items-center bg-bgcolor p-3 px-5 rounded-xl lg:w-[194px]">
                     <div><img src="assets/calender.png" alt=""></div>
                     <div>
-                        <div>Wed</div>
-                        <div class="font-bold"><data value="">Jul 28,2025</data></div>
+                        <div id="bar">Wed</div>
+                        <div id="date" class="font-bold"><data value="">Jul 28,2025</data></div>
                     </div>
                 </div>
             </div>

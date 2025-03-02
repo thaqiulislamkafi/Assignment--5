@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        bgcolor: '#F4F7FF',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal
+        }
+        .tasklist {
+            font-size: small;
+            color: rgb(109, 109, 109);
+            padding: 10px;
+            border-radius: 14px;
+            background-color: #F4F7FF;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body class="bg-bgcolor poppins">
+    <header class="w-[89.94vw] mx-auto mt-6 bg-white p-3 rounded-xl">
+        <nav class="nav-section  flex justify-between items-center">
+            <div class="logo flex gap-4 items-center ">
+                <div><img class="w-10" src="assets/logo.png" alt=""></div>
+                <div class="text-2xl">
+                    <span class="font-extralight">Dev</span><span class="font-bold">Board</span>
+                </div>
+            </div>
+            <div class="color flex gap-4 items-center">
+                <a href="index.html"><button class="px-3 py-2 bg-blue-700 rounded-md text-white font-semibold text-sm">Back to desk</button></a>
+            </div>
+        </nav>
+    </header>
+    <main class="w-[89.94vw] mx-auto mt-6">
+        <p class="text-center font-semibold text-xl">Blog</p>
+        <section>
+            <div class="bg-white my-5 rounded-md ">
+                <p class="font-semibold p-5">Question-1: What are the different ways to select an element in the DOM?</p>
+
+                <hr >
+            
+                <p class="p-5">There are 5 ways basically 4 ways to select an element in the DOM such as
+                    <br >1. "getElementById" which is use to select one element with a unique ID.
+                    <br> 2. "getElementsByClassName" which is use to select all elements with the same class.
+                    <br> 3. "getElementsByTagName" which is use to select all elements with the same tag.
+                    <br> 4. "querySelector" which is use to select the first matching element.
+                    <br>5. "querySelectorAll" which is use to select all matching elements.</p>
+            </div>
+
+            <div class="bg-white my-5 rounded-md">
+                <p class="font-semibold p-5">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+                <hr>
+            
+                <p class="p-5"><b>innerHTML</b> gets  the HTML content inside an element and it Includes all HTML tags and text, on ther hand <b>innerText</b> gets  only the visible text inside an element and Ignores hidden elements. Besides, <b>textContent</b>
+                    gets  all the text inside an element, including hidden text and ignores HTML tags and styling.</p>
+            </div>
+            <div class="bg-white my-5 rounded-md">
+                <p class="font-semibold p-5">Question-3: What is event delegation in the DOM?</p>
+                <hr>
+            
+                <p class="p-5"><b>Event delegation</b> refers to use a single event listener into a parent element to handle events for its child elements.It means we need not to add event listeners to each child , we add one into the parent</p>
+            </div>
+            <div class="bg-white my-5 rounded-md">
+                <p class="font-semibold p-5">Question-4: What is event bubbling in the DOM? </p>
+                <hr>
+            
+                <p class="p-5">In the DOM, <b>Event bubbling</b> refers an event starts from the target element and "bubbles up" through its parent elements according to the hierarchy</p>
+            </div>
+            <div class="bg-white my-5 rounded-md">
+                <p class="font-semibold p-5">Question-5: How do you create, add, and remove elements using JavaScript? </p>
+                <hr>
+            
+                <p class="p-5">we use <b>document.createElement()</b> to make a new element, use  <b>appendChild()</b> to add the element to the DOM,
+                    use <b>removeChild()</b> or <b>remove()</b> to delete an element</p>
+            </div>
+        </section>
+    </main>
+</body>
